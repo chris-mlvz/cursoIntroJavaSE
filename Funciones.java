@@ -4,7 +4,6 @@ public class Funciones {
         // Área de un circulo
         // pi * r2
         System.out.println(circleArea(y));
-
         // Área de una esfera
         // 4*PI*r2
         System.out.println(sphereArea(y));
@@ -28,6 +27,12 @@ public class Funciones {
         return (4 / 3) * Math.PI * Math.pow(r, 3);
     }
 
+    /**
+     * Descripción: Función que especificando su moneda convierte una cantidad de dinero a dolares
+     * @param quantity Cantidad de dinero
+     * @param currency Tipo de moneda: Solo acepta MXN o COP
+     * @return quantity Devuelve la cantidad actualizada en Dolares
+    **/
     public static double convertToDolar(double quantity, String currency) {
         // MXN COP
         switch (currency) {
